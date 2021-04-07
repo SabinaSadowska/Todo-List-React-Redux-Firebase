@@ -108,12 +108,12 @@ function Todos(props) {
 
   return (
     <div className="todos">
-      <h1>Lista zadań</h1>
+      <h1>To do list</h1>
       <form noValidate autoComplete="off">
         <TextField
           className="textField"
           id="standard-basic"
-          placeholder="Wpisz zadanie do zrobienia"
+          placeholder="Write some task to do"
           onChange={handleInputChange}
           value={inputValue}
         ></TextField>
@@ -124,15 +124,15 @@ function Todos(props) {
       <div className="search-wrapper">
         <TextField
           id="standard-basic"
-          placeholder="Wyszukaj po nazwie..."
+          placeholder="Search by name..."
           onChange={handleSearchInputChange}
           value={searchValue}
           className="search_bar"
         ></TextField>
         <select onChange={onOptionCategoryChange} className="select_button">
-          <option value="1">Wszystkie</option>
-          <option value="2">Zrobione</option>
-          <option value="3">Do zrobienia</option>
+          <option value="1">All</option>
+          <option value="2">Done</option>
+          <option value="3">To do</option>
         </select>
       </div>
       <div className={"items_wrapper"}>{renderItems(filteredItems)}</div>

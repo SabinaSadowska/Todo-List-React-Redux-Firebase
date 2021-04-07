@@ -119,7 +119,7 @@ function Todos(props) {
         ></TextField>
       </form>
       <Button variant="contained" color="primary" onClick={onClicAddItems}>
-        Dodaj
+        Add
       </Button>
       <div className="search-wrapper">
         <TextField
